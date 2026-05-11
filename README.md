@@ -12,7 +12,8 @@
 - 适用于快速原型开发、学习辅助及日常编程任务自动化场景。
 
 以下为自动编码的网页内容：
-<img src="https://github.com/KANG99/hello-my-agents/blob/main/Images/autogen_demo.png" title="某次自动编码生成的黄金看板">
+
+<img src="https://github.com/KANG99/hello-my-agents/blob/main/Images/autogen_demo.png" title="某次自动编码生成的黄金看板" width=400 height=400>
 
 
 ### 爆款产品市场调研及海报生成
@@ -23,7 +24,8 @@
 - 适用于电商运营、品牌营销及产品策划等场景，大幅缩短市场调研周期并降低设计成本。
 
 以下为生成的数据分析报告的部分内容：
-<img src="https://github.com/KANG99/hello-my-agents/blob/main/Images/%E9%83%A8%E5%88%86%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A%E5%86%85%E5%AE%B9.png" title="爆款产品数据分析报告部分内容">
+
+<img src="https://github.com/KANG99/hello-my-agents/blob/main/Images/%E9%83%A8%E5%88%86%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A%E5%86%85%E5%AE%B9.png" title="爆款产品数据分析报告部分内容" width=400 height=400>
 
 
 
