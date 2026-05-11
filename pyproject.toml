@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hello-my-agents"
+version = "0.1.0"
+description = "基于AutoGen和AgentScope的自动编码助手项目"
+requires-python = ">=3.10"
+dependencies = [
+  "streamlit",
+  "requests",
+  "pandas",
+  "numpy",
+  "plotly",
+  "python-dotenv",
+  "ollama",
+  "openai",
+  "ipython",
+  "playwright>=1.59.0",
+  "autogen-ext>=0.7.5",
+  "autogen-agentchat>=0.7.5",
+  "tiktoken>=0.12.0",
+  "pytz>=2026.2",
+  "tavily>=1.1.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+exclude = ["Images", "testing_env"]
