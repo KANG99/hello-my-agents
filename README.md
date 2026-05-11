@@ -10,6 +10,7 @@
 - 集成了代码审查与优化功能，可自动检测潜在问题并提供改进建议。
 - 通过对话式交互界面，用户可便捷地与AI助手沟通开发需求。
 - 适用于快速原型开发、学习辅助及日常编程任务自动化场景。
+<img src="https://github.com/KANG99/hello-my-agents/blob/main/Images/autogen_demo.png">
 
 
 ### 爆款产品市场调研及海报生成
