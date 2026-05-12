@@ -35,7 +35,7 @@
     - IF/ELSE 条件分支
     - 列表操作
     - 文档提取
-    - LLM 大模型（配置ollama提供本地llm服务，主要用到了llm glm-flash-4.7,qwen3.5:35b-a4b）
+    - LLM 大模型（配置ollama提供本地llm服务，主要用到了llm glm-flash-4.7,qwen3.5:35b-a3b）
     - 迭代循环
     - 模板
     - 输出九大工作流节点
