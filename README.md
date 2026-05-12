@@ -35,3 +35,4 @@
 - [autogen](https://github.com/microsoft/autogen)
 - [hello-agents](https://github.com/datawhalechina/hello-agents)
 - [AgentScope](https://docs.agentscope.io/)
+- [Dify](https://docs.dify.ai/en/use-dify/getting-started/introduction)
