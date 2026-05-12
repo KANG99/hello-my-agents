@@ -4,7 +4,7 @@
 
 ## 项目简介
 
-### 基于AutoGen的自动编码助手
+### [基于AutoGen的自动编码助手](https://github.com/KANG99/hello-my-agents/blob/main/%E5%9F%BA%E4%BA%8EAutoGen%E7%9A%84%E8%87%AA%E5%8A%A8%E7%BC%96%E7%A0%81%E5%8A%A9%E6%89%8B.ipynb)
 - 本项目利用AutoGen框架构建多智能体协作系统，实现自动化代码生成与调试。
 - 支持多种编程语言，能够根据需求描述快速生成高质量代码片段。
 - 集成了代码审查与优化功能，可自动检测潜在问题并提供改进建议。
@@ -16,7 +16,7 @@
 <img src="https://github.com/KANG99/hello-my-agents/blob/main/Images/autogen_demo.png" title="某次自动编码生成的黄金看板" width=400 height=400>
 
 
-### 爆款产品市场调研及海报生成
+### [爆款产品市场调研及海报生成](http://github.com/KANG99/hello-my-agents/blob/main/%E7%88%86%E6%AC%BE%E4%BA%A7%E5%93%81%E5%B8%82%E5%9C%BA%E8%B0%83%E7%A0%94%E5%8F%8A%E6%B5%B7%E6%8A%A5%E7%94%9F%E6%88%90.ipynb)
 - 基于多智能体协作架构，实现从市场数据收集、竞品分析到用户画像生成的全链路自动化调研流程。
 - 集成网络爬虫与API接口，实时获取电商平台、社交媒体的热销产品数据及用户评价信息。
 - 运用自然语言处理技术自动分析市场趋势，识别潜在爆款特征并生成可视化数据报告。
