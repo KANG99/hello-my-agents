@@ -42,6 +42,7 @@
     - 复用了模型配置、多模态视觉、结构化输出、并行执行与 Jinja2 模板能力。
     
 部分结果如下：
+
 <img src="https://github.com/KANG99/hello-my-agents/blob/main/Images/dify%20demo.png" title="dify多平台内容生成结果" width=400 height=400>
 
 
