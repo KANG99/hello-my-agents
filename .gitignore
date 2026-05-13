@@ -209,6 +209,8 @@ __marimo__/
 *.pdf
 .trae/
 example_reports/
-
-
+personInfo.txt
+dataset/
+model/
+.gradio/
 

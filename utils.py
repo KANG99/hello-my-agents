@@ -4,6 +4,9 @@ import ollama
 from openai import OpenAI
 from IPython.display import Markdown, display
 import subprocess
+from transformers import GenerationConfig
+from transformers import AutoModelForCausalLM, AutoTokenizer
+
 
 def get_ollama_models():
     """
@@ -90,6 +93,50 @@ def show_markdown_img(img_path: str):
     margin-top: 10px; margin-bottom: 10px;"
     '''
     print_markdown(f'<img src="{img_path}" {show_property}>')
+
+
+def load_model(model_name,**kwargs):
+    if isinstance(model_name, str):
+        model = AutoModelForCausalLM.from_pretrained(model_name,dtype='auto',device_map='auto')
+        tokenizer = AutoTokenizer.from_pretrained(model_name)
+    else:
+        model = model_name
+        tokenizer = model.tokenizer
+    if tokenizer.pad_token is None:
+        tokenizer.pad_token = tokenizer.get_vocab().get("<|pad|>", tokenizer.eos_token)
+    tokenizer.padding_side = "right"
+    return model, tokenizer
+
+def generate_word(model,tokenizer,messages,**kwargs):
+    text = tokenizer.apply_chat_template(
+        messages,
+        tokenize=False,
+        add_generation_prompt=True,
+        enable_thinking=False # Switches between thinking and non-thinking modes. Default is True.
+    )
+    model_inputs = tokenizer([text], return_tensors="pt").to(model.device)
+    generation_config = GenerationConfig(**kwargs)
+    generation_config.use_cache = True
+    generated_ids = model.generate(
+        **model_inputs,
+        generation_config=generation_config,
+    )
+    output_ids = generated_ids[0][len(model_inputs.input_ids[0]):].tolist() 
+    content = tokenizer.decode(output_ids, skip_special_tokens=True).strip("\n")
+    return content
+
+def load_data(data_path):  
+    with open(data_path, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+    return data
+
+# def generate_tang_poem(model,tokenizer,first_line):
+#     prompt = f"请输出这首唐诗后续的续写部分。\n {first_line}"
+#     messages = [
+#         {"role": "user", "content": prompt}
+#     ]
+#     content = generate_word(model,tokenizer,messages,max_new_tokens=32768)
+#     return ''.join([c.strip() for c in content.split('\n')[1:]])
 
 if __name__ == "__main__":
     print_markdown("这是一个Markdown字符串")
