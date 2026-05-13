@@ -47,15 +47,17 @@
 <img src="https://github.com/KANG99/hello-my-agents/blob/main/Images/dify%20demo.png" title="dify多平台内容生成结果" width=400 height=400>
 
 
-### 【RAG四大名著问答系统】
+### [RAG四大名著问答系统](https://github.com/KANG99/hello-my-agents/blob/main/RAG%EF%BC%9A%E5%9B%9B%E5%A4%A7%E5%90%8D%E8%91%97%E9%97%AE%E7%AD%94%E7%B3%BB%E7%BB%9F.ipynb)
 - 基于检索增强生成（RAG）技术构建的智能问答系统，目前只实现了红楼梦数据库的问答功能。
 - 离线LLM模型为Qwen3-4B-Instruct-2507,使用Qwen3-Embedding-0.6B模型进行文本嵌入，将名著文本转换为高维向量表示。
 - 采用Faiss向量数据库存储名著文本的语义向量，实现高效的相似度检索与上下文召回。
 - 适用于文学研究、教育教学及传统文化普及等场景，为古典文学爱好者提供智能化的知识服务。
-- 50道测试用例，测试结果如下（实际上还可以调整文本片段的颗粒度以及模型的参数，询问方式等来优化问答效果）：
-
-
-模型选择很关键，在做RAG之前，先测试一下模型的表现，不然都是坑。
+- 50道测试用例，测试结果如下：
+<img src="https://github.com/KANG99/hello-my-agents/blob/main/Images/barplot.png" title="问答结果" width=400 height=400>
+- 实际上还有较大提升空间，比如修改文档切分颗粒度，让LLM优化问题等方式。模型选择很关键，在做RAG之前，先测试一下模型的表现，不然都是坑。
+    - [测试题目及结果](example results/hongloumeng_QA.numbers)
+    - [gradio使用RAG问答部分结果展示](https://github.com/KANG99/hello-my-agents/blob/main/Images/RAGOutput.jpeg)
+    - [gradio未用RAG问答部分结果展示](https://github.com/KANG99/hello-my-agents/blob/main/Images/NormalOutput.jpeg)
 
 
 ## 参考项目
