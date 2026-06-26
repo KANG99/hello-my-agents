@@ -28,20 +28,7 @@
 <img src="https://github.com/KANG99/hello-my-agents/blob/main/Images/%E9%83%A8%E5%88%86%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A%E5%86%85%E5%AE%B9.png" title="爆款产品数据分析报告部分内容" width=400 height=400>
 
 ### [多平台内容生成器](https://github.com/KANG99/hello-my-agents/blob/main/HelloDify-%E5%A4%9A%E5%B9%B3%E5%8F%B0%E5%86%85%E5%AE%B9%E7%94%9F%E6%88%90%E5%99%A8.yml)
--  根据Dify官方demo，动手搭建的多平台内容生成器。主要实现的功能：将一段普通文案，润色成适合在不同社交平台发布的个性化文案。
--  内容主要涉及：
-    - 用户输入
-    - 参数提取
-    - IF/ELSE 条件分支
-    - 列表操作
-    - 文档提取
-    - LLM 大模型（配置ollama提供本地llm服务，主要用到了llm glm-flash-4.7,qwen3.5:35b-a3b）
-    - 迭代循环
-    - 模板
-    - 输出九大工作流节点
-    - 复用了模型配置、多模态视觉、结构化输出、并行执行与 Jinja2 模板能力。
-- 搭建平台：Dify本地平台。
-    
+-  搭建本地Dify环境，实现多平台内容生成器。主要实现的功能：将一段普通文案，润色成适合在不同社交平台发布的个性化文案。
 部分结果如下：
 
 <img src="https://github.com/KANG99/hello-my-agents/blob/main/Images/dify%20demo.png" title="dify多平台内容生成结果" width=400 height=400>
